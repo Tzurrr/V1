@@ -31,6 +31,6 @@ def write(event_string):
 
     doc_UUID = uuid.uuid4()
     #print("j")
-    resp = requests.put(url=f"http://51.145.198.199:9200/{event_string}/_doc/{doc_UUID}", json=a_json,
+    resp = requests.put(url=f"http://13.81.211.207:9200/{event_string}/_doc/{doc_UUID}", json=a_json,
                         headers={'Content-Type': 'application/json'})
     print(resp.json())
